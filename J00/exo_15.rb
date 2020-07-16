@@ -1,13 +1,12 @@
 print '> '
 user_number = gets.chomp.to_i
 
-a = 0
-(user_number + a).upto 2020 do
+user_number.upto 2020 do |a|
 	
-	if a == 0
-		puts "En #{user_number + a} il naissait"
-		else
-		puts "En #{user_number + a} il avait #{a} ans"
+	if user_number == a
+		puts "En #{a} il naissait"
+	else
+		puts "En #{a} il avait #{a - user_number} ans"
 	end
 	a += 1
 end

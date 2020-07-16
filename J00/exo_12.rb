@@ -1,8 +1,6 @@
 print '> '
 user_number = gets.chomp.to_i
 
-a = 0
-a.upto user_number do
+0.upto user_number do |a|
 	puts a
-	a += 1
 end
