@@ -2,7 +2,6 @@ print '> '
 user_number = gets.chomp.to_i
 
 a = 0
-while a < user_number do
+a.upto user_number - 1 do
 	puts 'Salut, ca farte ?'
-	a += 1
 end
