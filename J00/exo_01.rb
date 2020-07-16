@@ -1,5 +1,5 @@
 def ft_putstr
-	puts "Bonjour, monde !"
+  puts "Bonjour, monde !"
 end
 
 ft_putstr
