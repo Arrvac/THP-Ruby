@@ -8,5 +8,4 @@ user_number.upto 2020 do |a|
 	else
 		puts "En #{a} il avait #{a - user_number} ans"
 	end
-	a += 1
 end
