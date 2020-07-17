@@ -1,7 +1,5 @@
-
 def ask_first_name
-	first_name = gets.chomp
-	return first_name
+	gets.chomp
 end
 
 def say_hello(user_name)

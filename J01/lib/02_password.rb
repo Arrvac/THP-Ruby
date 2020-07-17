@@ -7,8 +7,7 @@ end
 def signup
 	puts 'Save your password:'
 	print '> '
-	user_password = gets.chomp
-	return user_password
+	gets.chomp
 end
 
 def login(user_password)
@@ -17,9 +16,7 @@ def login(user_password)
 		puts 'Your password:'
 		print '> '
 		user_try = gets.chomp
-		if user_try != user_password
-			puts 'Eroor: Bad password !'
-		end
+		puts 'Eroor: Bad password !' if user_try != user_password
 	end
 end
 

@@ -1,16 +1,14 @@
 def half_pyramid(user_number)
 	1.upto user_number do |a|
 			print ' ' * (user_number - a)
-			print '#' * a
-		puts
+			puts '#' * a
 	end
 end
 
 def full_pyramid(user_number)
 	1.upto user_number do |a|
 			print ' ' * (user_number - a)
-			print '#' * (a * 2 - 1)
-		puts
+			puts '#' * (a * 2 - 1)
 	end	
 end
 
@@ -22,13 +20,11 @@ def wtf_pyramid(user_number)
 	i = (user_number.to_f/2)
 	1.upto i.ceil do |a|
 			print ' ' * (i.ceil - a)
-			print '#' * (a * 2 - 1)
-		puts
+			puts '#' * (a * 2 - 1)
 	end
 	1.upto i.floor do |a|
 			print ' ' * (a)
-			print '#' * (user_number - a * 2)
-		puts
+			puts '#' * (user_number - a * 2)
 	end
 end
 
