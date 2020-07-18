@@ -7,9 +7,8 @@ def length_tab
 end
 
 def check_little_word
-	print "La longeur du plus petit mot de ce tab est de "
-	print TAB.min { |a, b| a.length <=> b.length }.length
-	puts " char"
+	result = TAB.min { |a, b| a.length <=> b.length }.length
+	puts "La longeur du plus petit mot de ce tab est de #{ result } char"
 end
 
 def check_5_letter_word
@@ -33,7 +32,6 @@ def index_epenser
 end
 
 def rep
-
 	TAB.min { |a, b| a.length <=> b.length }.length.upto TAB.max { |a, b| a.length <=> b.length }.length do |a|
 		puts "Il y a #{ TAB.count { |num| num.length == a } } handle de #{a - 1} char" if TAB.count { |num| num.length == a} != 0
 	end
