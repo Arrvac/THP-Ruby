@@ -8,7 +8,7 @@ end
 
 def check_little_word
 	result = TAB.min { |a, b| a.length <=> b.length }.length
-	puts "La longeur du plus petit mot de ce tab est de #{ result } char"
+	puts "La longeur du plus petit mot de ce tab est de #{result} char"
 end
 
 def check_5_letter_word
